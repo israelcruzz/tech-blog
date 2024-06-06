@@ -28,7 +28,7 @@
 
 <body class="bg-[#141414]">
     <header class="py-6 px-12 mx-auto flex justify-between items-center bg-[#1A1A1A]">
-        <a href=""><img src="./assets/images/logo.png" alt="Logo Image"></a>
+        <a href="/"><img src="./assets/images/logo.png" alt="Logo Image"></a>
 
         <a href="create.php" class="px-3 py-2.5 bg-[#FFD11A] rounded-lg font-medium hover:bg-[#C8A51D]">Criar</a>
     </header>
@@ -53,13 +53,13 @@
             <?php  
                 if($resultdates->num_rows > 0){
                     while($row = $resultdates->fetch_assoc()){
-                        echo "<div class='flex flex-col gap-4 min-h-[380px] justify-between'>";
+                        echo "<a href='post.php?id=" . $row['id'] . "' class='flex flex-col gap-4 min-h-[380px] justify-between'>";
                         echo "<img src='" . $row['image'] . "' width='382' height='244' alt='' class='w-full'>";
                         echo "<h3 class='text-white font-semibold text-[18px]'>" . $row['title'] . "</h3>";
                         echo "<p class='text-[#98989A] font-normal text-[16px]'>" . $row['description'] . "</p>";
                         echo "<button
                         class='flex justify-center items-center px-5 py-[14px] border border-[#262626] rounded-lg cursor-pointer text-white hover:bg-[#FFD11A] hover:text-black font-medium'>Acessar</button>";
-                        echo "</div>";
+                        echo "</a>";
                     }
                 } else {
                     echo "<h1 class='text-white font-medium'>Não existem posts</h1>";
