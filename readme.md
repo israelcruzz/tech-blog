@@ -2,11 +2,13 @@
 
 ### Imagens
 
-<img src="" width="100%" height="100%" />
+<img src="https://github.com/israelcruzz/tech-blog/blob/main/assets/images/home.png" width="100%" height="100%" />
 
-<img src="" width="100%" height="100%" />
+<img src="https://github.com/israelcruzz/tech-blog/blob/main/assets/images/home-02.png" width="100%" height="100%" />
 
-<img src="" width="100%" height="100%" />
+<img src="https://github.com/israelcruzz/tech-blog/blob/main/assets/images/create.png" width="100%" height="100%" />
+
+<img src="https://github.com/israelcruzz/tech-blog/blob/main/assets/images/post.png" width="100%" height="100%" />
 
 ### Descrição
 Este projeto é um blog simples onde os usuários podem visualizar, criar e acessar posts sobre games e tecnologias. Utiliza PHP e MySQL para o backend, e Tailwind CSS para estilização.
